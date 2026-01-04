@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div>
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <th colspan="4"><input type="text" id="display"></th>
+        </tr>
+        <tr>
+            <td><button onclick="display.value+='1'">1</button></td>
+            <td><button onclick="display.value+='2'">2</button></td>
+            <td><button onclick="display.value+='3'">3</button></td>
+            <td><button onclick="display.value+='+'">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="display.value+='4'">4</button></td>
+            <td><button onclick="display.value+='5'">5</button></td>
+            <td><button onclick="display.value+='6'">6</button></td>
+            <td><button onclick="display.value+='-'">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="display.value+='7'">7</button></td>
+            <td><button onclick="display.value+='8'">8</button></td>
+            <td><button onclick="display.value+='9'">9</button></td>
+            <td><button onclick="display.value+='*'">x</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="display.value+='0'">0</button></td>
+            <td><button onclick="display.value+='00'">00</button></td>
+            <td><button onclick="display.value+='.'">.</button></td>
+            <td><button onclick="display.value+='/'">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="display.value=''">C</button></td>
+            <td><button onclick="display.value=display.value.slice(0,-1)">Del</button></td>
+            <td colspan="4" id="equal"><button onclick="display.value=eval(display.value)" style="width:90%; height:45px;">=</button></td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
